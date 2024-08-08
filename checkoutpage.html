@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<body>
+    <div class="topnav">
+         <a href="index.html">Home</a>
+         <a href="about us.html">About Us</a>
+         <a href="Dairy Products.html">Dairy Products</a>
+         <a href="Meat & Seafood Page.html">Meat & Seafood Items</a>
+         <a href="Vegetables Page.html">Vegetables Page</a>
+         <a href="Fruit Page.html">Fruit Products</a>
+         <a href="Cosmetics & Skincare.html">Cosmetics & Skincare</a>
+         <a href="Baking And Cooking Ingridients.html">Baking & Cooking</a>
+         <a class="active" href="Order Page.html">Order Page</a>
+         <a href="Loyalty Page.html">Loyalty Registration</a>   
+    </div>
+    <h2>Checkout</h2>
+    <div class="container">
+        <div id="cart-summary">
+            <h3>Order Summary</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th> 
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="checkout-summary-body">
+                    <!-- Cart items will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+            <div class="total-container">
+                <h3>Total: Rs. <span id="checkout-total-price">0</span></h3>
+            </div>
+        </div><br>
+        <form id="checkout-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip" required>
+
+            <label>Credit Card Type</label>
+            <select id="Credit Card Type" name="Credit Card Type" required>
+                <option value="AMEX">AMEX</option>
+                <option value="VISA">VISA</option>
+                <option value="MASTERCARD">MASTERCARD</option>
+            </select>
+         
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" required>
+            
+            <label for="exp-date">Expiry Date</label>
+            <input type="date" id="exp-date" name="exp-date" required>
+            
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required> 
+            
+            <input type="submit" value="Pay">
+        </form>  
+    </div>
+    <footer class="footer">
+        <h2>AUSTIN'S SUPERMARKET</h2>
+        <p>Copyright @2024</p>
+        <p>Established 2024</p>
+    </footer> 
+    <script src="script.js"></script>
+</body>
+</html>

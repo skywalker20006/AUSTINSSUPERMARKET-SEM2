@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUSTIN SUPERMARKET</title>
+    <h1><center>AUSTINS SUPERMARKET</center></h1>
+</head>
+<body>
+    <div class="topnav">
+         <a href="index.html">Home</a>
+         <a href="about us.html">About Us</a>
+         <a href="Dairy Products.html">Dairy Products</a>
+         <a href="Meat & Seafood Page.html">Meat & Seafood Items</a>
+         <a href="Vegetables Page.html">Vegetables Page</a>
+         <a href="Fruit Page.html">Fruit Products</a>
+         <a href="Cosmetics & Skincare.html">Cosmetics & Skincare</a>
+         <a href="Order Page.html">Order Page</a>
+         <a class="active" href="#Loyalty Page">Loyalty Registration</a>
+    </div>
+    <div class="container">
+        <img src="Loyalty Page Images/Customer loyalty Program page banner.png" alt="banner image" width="80%" height="350px"> <!--include the other version of the windows -->
+    </div>
+    <h2>Available Loyalty Programs</h2><br>
+    <div class="flex-container">
+        <div class="flex-item">
+            <img src="Loyalty Page Images/BRONZE.png" alt="Bronze Tier" width="70%" height="70%">
+        </div> 
+        <div class="flex-item">
+            <img src="Loyalty Page Images/SILVER.png" alt="Silver Tier" width="70%" height="70%">
+        </div>
+        <div class="flex-item">
+            <img src="Loyalty Page Images/GOLD.png" alt="Gold Tier Loyalty" width="70%" height="70%">
+        </div>
+        <div class="flex-item">
+            <h3>Bronze Tier benifits</h3>
+            <ul>
+                <li>Welcome Discount: 5% off on the first purchase</li>
+                <li>Points Accumulation: Earn 1 point for every Rs. 1/= spent</li>
+                <li>Exclusive Discounts: Monthly email with special deals and discounts</li>
+                <li>Birthday Treat: 10% off coupon on your birthday month</li>
+                <li>Early Access: Priority notification for sales and promotions</li>
+            </ul><br>
+            <h4>Rs. 10,000/=</h4>
+            <button type="button" class="plain-button">Purchase Subscription</button>
+        </div>
+        <div class="flex-item">
+            <h3>Silver Tier benifits</h3>
+            <ul>
+                <li>All the Bronze Tier Benefits</li>
+                <li>Extra Points : Earn 1.5 points for every Rs. 1/= spent</li>
+                <li>MOnthly Free item : Free item for a month (snacks or drinks only)</li>
+                <li>Double Points Days! : Special days where you can earn double the points</li>
+                <li>Special Event Invitations : Invites to events held yearly</li>
+                <li>Enhanced Birthday Treat Offer : 15% on your birthday month</li>
+            </ul>
+            <h4>Rs. 14,000/=</h4>
+            <button type="button" class="plain-button">Purchase Subscription</button>
+        </div>
+        <div class="flex-item">
+            <h3>Gold Tier benifits</h3>
+            <ul>
+                <li>All Silver Benefits Plus :</li> <!--use align="left" but thats inline css?-->
+                <li>2x The Points : Earn 2 points for every Rs. 1/= spent</li>
+                <li>Exclusive Access Items : Exlcusive access to limted-edition items</li>
+                <li>Monthly Gift : Exclusive Monthly Gift Or Voucher</li>
+                <li>Birthday Bonus : </li>
+            </ul><br>
+            <h4>Rs. 20,000/=</h4>
+            <button type="button" class="plain-button">Purchase Subscription</button> 
+        </div>
+    </div>
+    <h2>Register To Our Loyalty Program</h2>
+
+    <div>
+      <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+        <label for="Subscription Tier">Subscription Tier</label>
+        <select id="Subscription Tier" name="Subscription Tier">
+          <option value="Bronze">Bronze</option>
+          <option value="Silver">Silver</option>
+          <option value="Gold">Gold</option>
+        </select>
+  
+        <label>Credit Card Type</label>
+        <select id="Credit Card Type" name = "Credit Card Type">
+            <option value = "AMEX">AMEX</option>
+            <option value="VISA">VISA</option>
+            <option value = "MASTERCARD">MASTERCARD</option>
+        </select>
+
+        <label>Credit Card Holder Name</label>
+        <input type="text" id="CreditCardHolderName" name="Credit Card Holder Name" placeholder="Your name.."><br>
+        
+        <label>Credit Card Number</label>
+        <input type="text" id="CreditCardNumber" name="Credit Card Number" placeholder="Credit Card Number.."><br>
+
+        <label>Credit Card Security Pin</label>
+        <input type="text" id="CreditCardSecuirtyPin" name="Credit Card Secuirty Pin" placeholder="Enter the 3 digit number in the back of your card..."><br>
+
+        <label for="Expiry Date">Expiry Date</label>
+        <input type="date" id="ExpiryDate" name="Expiry Date">
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <footer class="footer">
+        <h2>AUSTIN'S SUPERMARKET</h2>
+        <p>Copyright @2024</p>
+        <p>Established 2024</p>
+
+    </footer>
+</body>
+</html>
